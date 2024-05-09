@@ -1,15 +1,13 @@
 {
-    "compilerOptions": {
-        "target": "esnext",
-        "lib": [
-            "esnext"
-        ],
-        "module": "esnext",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "strict": true,
-        "strictNullChecks": true,
-        "esModuleInterop": true,
-        "skipDefaultLibCheck": true
-    }
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true
+  }
 }

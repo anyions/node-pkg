@@ -1,11 +1,11 @@
-import { dirname, join, win32 } from 'node:path'
 import fs from 'node:fs'
 import fsp from 'node:fs/promises'
+import { dirname, join, win32 } from 'node:path'
 import process from 'node:process'
 
+import { findUp } from 'find-up'
 import { interopDefault, resolvePathSync } from 'mlly'
 import type { PackageJson } from 'pkg-types'
-import { findUp } from 'find-up'
 
 export interface PackageInfo {
   name: string
@@ -30,26 +30,23 @@ function _resolve(path: string, options: PackageResolvingOptions = {}) {
     options.platform = process.platform === 'win32' ? 'win32' : 'posix'
 
   const modulePath = resolvePathSync(path, {
-    url: options.paths,
+    url: options.paths
   })
-  if (options.platform === 'win32')
-    return win32.normalize(modulePath)
+  if (options.platform === 'win32') return win32.normalize(modulePath)
   return modulePath
 }
 
 export function resolveModule(name: string, options: PackageResolvingOptions = {}) {
   try {
     return _resolve(name, options)
-  }
-  catch (e) {
+  } catch (e) {
     return undefined
   }
 }
 
 export async function importModule<T = any>(path: string): Promise<T> {
   const i = await import(path)
-  if (i)
-    return interopDefault(i)
+  if (i) return interopDefault(i)
   return i
 }
 
@@ -59,16 +56,14 @@ export function isPackageExists(name: string, options: PackageResolvingOptions =
 
 function getPackageJsonPath(name: string, options: PackageResolvingOptions = {}) {
   const entry = resolvePackage(name, options)
-  if (!entry)
-    return
+  if (!entry) return
 
   return searchPackageJSON(entry)
 }
 
 export async function getPackageInfo(name: string, options: PackageResolvingOptions = {}) {
   const packageJsonPath = getPackageJsonPath(name, options)
-  if (!packageJsonPath)
-    return
+  if (!packageJsonPath) return
 
   const packageJson: PackageJson = JSON.parse(await fs.promises.readFile(packageJsonPath, 'utf8'))
 
@@ -77,14 +72,13 @@ export async function getPackageInfo(name: string, options: PackageResolvingOpti
     version: packageJson.version,
     rootPath: dirname(packageJsonPath),
     packageJsonPath,
-    packageJson,
+    packageJson
   }
 }
 
 export function getPackageInfoSync(name: string, options: PackageResolvingOptions = {}) {
   const packageJsonPath = getPackageJsonPath(name, options)
-  if (!packageJsonPath)
-    return
+  if (!packageJsonPath) return
 
   const packageJson: PackageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'))
 
@@ -93,23 +87,19 @@ export function getPackageInfoSync(name: string, options: PackageResolvingOption
     version: packageJson.version,
     rootPath: dirname(packageJsonPath),
     packageJsonPath,
-    packageJson,
+    packageJson
   }
 }
 
 function resolvePackage(name: string, options: PackageResolvingOptions = {}) {
   try {
     return _resolve(`${name}/package.json`, options)
-  }
-  catch {
-  }
+  } catch {}
   try {
     return _resolve(name, options)
-  }
-  catch (e: any) {
+  } catch (e: any) {
     // compatible with nodejs and mlly error
-    if (e.code !== 'MODULE_NOT_FOUND' && e.code !== 'ERR_MODULE_NOT_FOUND')
-      console.error(e)
+    if (e.code !== 'MODULE_NOT_FOUND' && e.code !== 'ERR_MODULE_NOT_FOUND') console.error(e)
     return false
   }
 }
@@ -117,15 +107,12 @@ function resolvePackage(name: string, options: PackageResolvingOptions = {}) {
 function searchPackageJSON(dir: string) {
   let packageJsonPath
   while (true) {
-    if (!dir)
-      return
+    if (!dir) return
     const newDir = dirname(dir)
-    if (newDir === dir)
-      return
+    if (newDir === dir) return
     dir = newDir
     packageJsonPath = join(dir, 'package.json')
-    if (fs.existsSync(packageJsonPath))
-      break
+    if (fs.existsSync(packageJsonPath)) break
   }
 
   return packageJsonPath
@@ -133,13 +120,12 @@ function searchPackageJSON(dir: string) {
 
 export async function loadPackageJSON(cwd = process.cwd()): Promise<PackageJson | null> {
   const path = await findUp('package.json', { cwd } as any)
-  if (!path || !fs.existsSync(path))
-    return null
+  if (!path || !fs.existsSync(path)) return null
   return JSON.parse(await fsp.readFile(path, 'utf-8'))
 }
 
 export async function isPackageListed(name: string, cwd?: string) {
-  const pkg = await loadPackageJSON(cwd) || {}
+  const pkg = (await loadPackageJSON(cwd)) || {}
 
-  return (name in (pkg.dependencies || {})) || (name in (pkg.devDependencies || {}))
+  return name in (pkg.dependencies || {}) || name in (pkg.devDependencies || {})
 }

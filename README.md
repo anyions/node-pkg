@@ -7,7 +7,7 @@ Node pakcages management, based on [@antfu/local-pkg](https://www.npmjs.com/pack
 - Get information on local packages. works on both CJS and ESM.
 - Install package programmatically. Detect package managers automatically (npm, yarn, bun and pnpm).
 
-## Install 
+## Install
 
 ```bash
 npm i @anyions/node-pkg
@@ -23,12 +23,12 @@ import {
   importModule,
   isPackageExists,
   resolveModule,
-} from '@anyions/node-pkg'
+} from "@anyions/node-pkg";
 
-isPackageExists('@anyions/node-pkg') // true
-isPackageExists('foo') // false
+isPackageExists("@anyions/node-pkg"); // true
+isPackageExists("foo"); // false
 
-await getPackageInfo('@anyions/node-pkg')
+await getPackageInfo("@anyions/node-pkg");
 /* {
  *   name: "@anyions/node-pkg",
  *   version: "1.0.0",
@@ -40,19 +40,19 @@ await getPackageInfo('@anyions/node-pkg')
  */
 
 // similar to `require.resolve` but works also in ESM
-resolveModule('local-pkg')
+resolveModule("local-pkg");
 // '/path/to/node_modules/@anyions/node-pkg/dist/index.cjs'
 
 // similar to `await import()` but works also in CJS
-const { importModule } = await importModule('@anyions/node-pkg')
+const { importModule } = await importModule("@anyions/node-pkg");
 ```
 
 Install package programmatically
 
 ```ts
-import { installPackage } from '@anyions/node-pkg'
+import { installPackage } from "@anyions/node-pkg";
 
-await installPackage('vite', { silent: true })
+await installPackage("vite", { silent: true });
 ```
 
 ## License
