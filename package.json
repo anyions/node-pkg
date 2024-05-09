@@ -1,0 +1,63 @@
+{
+  "name": "@anyions/node-pkg",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Node packages management",
+  "author": {
+    "name": "AnyIons",
+    "email": "anyions@hotmail.com",
+    "url": "https://github.com/anyions"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/anyions/node-pkg",
+  "repository": {
+    "url": "https://github.com/anyions/node-pkg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anyions/node-pkg/issues"
+  },
+  "keywords": [
+    "package"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --no-splitting",
+    "clean": "pnpm rimraf .turbo node_modules dist",
+    "lint": "pnpm eslint .",
+    "lint:eslint": "eslint --cache --max-warnings 0 \"**/*.{ts,tsx,js,cjs,mjs}\" --fix",
+    "lint:prettier": "prettier --write --log-level warn \"**/*.{js,cjs,mjs,json,ts,tsx,md}\"",
+    "publish": "bumpp && npm publish --access=public",
+    "typecheck": "tsc --noEmit --skipLibCheck"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@jsdevtools/ez-spawn": "^3.0.4",
+    "find-up": "^7.0.0",
+    "mlly": "^1.7.0",
+    "pkg-types": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.10",
+    "bumpp": "^9.4.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
