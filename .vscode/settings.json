@@ -12,10 +12,10 @@
     "scss",
     "json",
     "jsonc",
+    "json5",
     "yaml",
     "yml",
-    "markdown",
-    "toml"
+    "markdown"
   ],
   "prettier.enable": false
 }
