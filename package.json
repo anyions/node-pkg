@@ -1,7 +1,7 @@
 {
   "name": "@anyions/node-pkg",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node packages management",
   "author": {
     "name": "AnyIons",
@@ -16,7 +16,9 @@
   "bugs": {
     "url": "https://github.com/anyions/node-pkg/issues"
   },
-  "keywords": ["package"],
+  "keywords": [
+    "package"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -31,7 +33,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=14"
   },
