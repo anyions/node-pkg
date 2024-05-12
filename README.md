@@ -1,6 +1,6 @@
 # node-pkg
 
-[![NPM version](https://img.shields.io/npm/v/@anyions/node-pkg?color=a1b858&label=)](https://www.npmjs.com/package/@anyions/node-pkg)
+[![NPM version](https://img.shields.io/npm/v/@anyions/node-pkg?color=a1b858&label=)](https://www.npmjs.com/package/@anyions/node-pkg) ![NPM License](https://img.shields.io/npm/l/%40anyions%2Fshared-eslint-config) ![Static Badge](https://img.shields.io/badge/author-AnyIons-blue)
 
 Node pakcages management, based on [@antfu/local-pkg](https://www.npmjs.com/package/@antfu/local-pkg) & [@antfu/install-pkg](https://www.npmjs.com/package/@antfu/install-pkg).
 
@@ -17,7 +17,7 @@ npm i @anyions/node-pkg
 
 Get information on local packages
 
-```ts
+```js
 import {
   getPackageInfo,
   importModule,

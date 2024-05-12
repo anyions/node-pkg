@@ -5,6 +5,7 @@ import process from 'node:process'
 
 import { findUp } from 'find-up'
 import { interopDefault, resolvePathSync } from 'mlly'
+
 import type { PackageJson } from 'pkg-types'
 
 export interface PackageInfo {
