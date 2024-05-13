@@ -1,7 +1,7 @@
 {
   "name": "@anyions/node-pkg",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node packages management",
   "author": {
     "name": "AnyIons",
@@ -48,7 +48,7 @@
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
-    "@anyions/shared-eslint-config": "^1.0.2",
+    "@anyions/shared-config-eslint": "^1.0.3",
     "@jsdevtools/ez-spawn": "^3.0.4",
     "find-up": "^7.0.0",
     "mlly": "^1.7.0",
