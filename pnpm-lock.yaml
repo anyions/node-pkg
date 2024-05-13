@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@anyions/shared-eslint-config':
-        specifier: ^1.0.2
-        version: 1.0.2(@anyions/node-pkg@1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))
       '@jsdevtools/ez-spawn':
         specifier: ^3.0.4
         version: 3.0.4
@@ -24,6 +21,9 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
     devDependencies:
+      '@anyions/shared-config-eslint':
+        specifier: '*'
+        version: 1.0.4(@anyions/node-pkg@1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-flat-config-utils@0.2.4)(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))
       '@types/node':
         specifier: ^20.12.10
         version: 20.12.11
@@ -49,9 +49,37 @@ packages:
     resolution: {integrity: sha512-jD6axNoxpoXrW/iBsypKdyZTAazcrMlHOV/39RN8hT2LIknBtakOSTolW9nyAqhVTC5u5rb7H2PY1rHS6rEcFA==}
     engines: {node: '>=14'}
 
+  '@anyions/shared-config-eslint@1.0.4':
+    resolution: {integrity: sha512-7fF1muA8f45fzsvwDg4lUrXDMKOuuyx1wPgHRWzFEBx/j/Wu3vmlDEiXXq/ACoSl1Nl1U7rkmqotVY3It8CYTA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@anyions/node-pkg': ^1.0.2
+      '@typescript-eslint/eslint-plugin': 7.8.0
+      '@typescript-eslint/parser': 7.8.0
+      '@unocss/eslint-config': ^0.59.4
+      eslint: 9.2.0
+      eslint-config-flat-gitignore: ^0.1.5
+      eslint-flat-config-utils: ^0.2.4
+      eslint-plugin-eslint-comments: ^3.2.0
+      eslint-plugin-import-x: 0.5.0
+      eslint-plugin-jsdoc: ^48.2.4
+      eslint-plugin-jsonc: ^2.15.1
+      eslint-plugin-markdown: ^5.0.0
+      eslint-plugin-n: 17.4.0
+      eslint-plugin-perfectionist: ^2.10.0
+      eslint-plugin-prettier: 5.1.3
+      eslint-plugin-unicorn: 52.0.0
+      eslint-plugin-unused-imports: ^3.2.0
+      eslint-plugin-vue: ^9.25.0
+      globals: 15.1.0
+      jsonc-eslint-parser: ^2.4.0
+      prettier: ^3.2.5
+      vue-eslint-parser: 9.4.2
+
   '@anyions/shared-eslint-config@1.0.2':
     resolution: {integrity: sha512-6AoZKv7cCSCTs0rd4oZVpqYMhNDHyg6KI5SewmfCM0VicdeYjzhcUxU5oHN2CC30ktlXB/uWvI9KGwqR9g00Zg==}
     engines: {node: '>=14'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       '@anyions/node-pkg': ^1.0.2
       '@typescript-eslint/eslint-plugin': 7.8.0
@@ -765,6 +793,9 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
+
+  eslint-flat-config-utils@0.2.4:
+    resolution: {integrity: sha512-k7MJkSIfF0bs5eQu1KXyV0AhsvdsqSt1pQfZNLwf6qkozuHQV6aNHg5f8+3Ya+WTzpB+e7I3hMhs4qBwx7nEkw==}
 
   eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
@@ -1849,6 +1880,31 @@ snapshots:
       - prettier
       - vue-eslint-parser
 
+  ? '@anyions/shared-config-eslint@1.0.4(@anyions/node-pkg@1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-flat-config-utils@0.2.4)(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))'
+  : dependencies:
+      '@anyions/node-pkg': 1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))
+      '@typescript-eslint/eslint-plugin': 7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5)
+      '@typescript-eslint/parser': 7.8.0(eslint@9.2.0)(typescript@5.4.5)
+      '@unocss/eslint-config': 0.59.4(eslint@9.2.0)(typescript@5.4.5)
+      eslint: 9.2.0
+      eslint-config-flat-gitignore: 0.1.5
+      eslint-flat-config-utils: 0.2.4
+      eslint-plugin-eslint-comments: 3.2.0(eslint@9.2.0)
+      eslint-plugin-import-x: 0.5.0(eslint@9.2.0)(typescript@5.4.5)
+      eslint-plugin-jsdoc: 48.2.4(eslint@9.2.0)
+      eslint-plugin-jsonc: 2.15.1(eslint@9.2.0)
+      eslint-plugin-markdown: 5.0.0(eslint@9.2.0)
+      eslint-plugin-n: 17.4.0(eslint@9.2.0)
+      eslint-plugin-perfectionist: 2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))
+      eslint-plugin-prettier: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5)
+      eslint-plugin-unicorn: 52.0.0(eslint@9.2.0)
+      eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)
+      eslint-plugin-vue: 9.26.0(eslint@9.2.0)
+      globals: 15.2.0
+      jsonc-eslint-parser: 2.4.0
+      prettier: 3.2.5
+      vue-eslint-parser: 9.4.2(eslint@9.2.0)
+
   ? '@anyions/shared-eslint-config@1.0.2(@anyions/node-pkg@1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))'
   : dependencies:
       '@anyions/node-pkg': 1.0.2(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(@unocss/eslint-config@0.59.4(eslint@9.2.0)(typescript@5.4.5))(eslint-config-flat-gitignore@0.1.5)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint-plugin-eslint-comments@3.2.0(eslint@9.2.0))(eslint-plugin-import-x@0.5.0(eslint@9.2.0)(typescript@5.4.5))(eslint-plugin-jsdoc@48.2.4(eslint@9.2.0))(eslint-plugin-jsonc@2.15.1(eslint@9.2.0))(eslint-plugin-markdown@5.0.0(eslint@9.2.0))(eslint-plugin-n@17.4.0(eslint@9.2.0))(eslint-plugin-perfectionist@2.10.0(eslint@9.2.0)(typescript@5.4.5)(vue-eslint-parser@9.4.2(eslint@9.2.0)))(eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.2.0))(eslint@9.2.0)(prettier@3.2.5))(eslint-plugin-unicorn@52.0.0(eslint@9.2.0))(eslint-plugin-unused-imports@3.2.0(@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0)(typescript@5.4.5))(eslint@9.2.0))(eslint-plugin-vue@9.26.0(eslint@9.2.0))(eslint@9.2.0)(globals@15.2.0)(jsonc-eslint-parser@2.4.0)(prettier@3.2.5)(vue-eslint-parser@9.4.2(eslint@9.2.0))
@@ -2519,6 +2575,11 @@ snapshots:
   eslint-config-prettier@9.1.0(eslint@9.2.0):
     dependencies:
       eslint: 9.2.0
+
+  eslint-flat-config-utils@0.2.4:
+    dependencies:
+      '@types/eslint': 8.56.10
+      pathe: 1.1.2
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
